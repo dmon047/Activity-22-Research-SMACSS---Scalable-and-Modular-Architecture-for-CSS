@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SMACSS Example</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to the external CSS file -->
+</head>
+<body class="light-theme"> <!-- Class for theme -->
+    <header class="header">
+        <h1>SMACSS Example</h1>
+        <button id="theme-toggle" class="btn">Toggle Dark/Light Theme</button> <!-- Theme toggle button -->
+    </header>
+
+    <main class="main-content">
+        <section class="card">
+            <h2>Card Title</h2>
+            <p>This is a reusable card component that demonstrates content display.</p>
+            <button class="btn">Learn More</button>
+        </section>
+
+        <section class="card">
+            <h2>Another Card</h2>
+            <p>This card can also be reused to display different content.</p>
+            <button class="btn">View Details</button>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2024 SMACSS Example. All rights reserved.</p>
+    </footer>
+
+    <script>
+        const themeToggle = document.getElementById('theme-toggle');
+        const body = document.body;
+
+        themeToggle.addEventListener('click', () => {
+            body.classList.toggle('dark-theme');
+            body.classList.toggle('light-theme');
+        });
+    </script>
+</body>
+</html>
